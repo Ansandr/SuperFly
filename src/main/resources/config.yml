@@ -1,0 +1,58 @@
+particle:
+  play_sound: true
+  coordinates: '~ ~-1 ~'
+
+# Взыскание опыта за время полета
+expFly:
+  enable: true
+  # С каким периородм забирать cost опыта (в тиках)
+  period: 5
+  # Сколько опыта съедаеться за period
+  cost: 5.0
+
+
+# Взыскание денег за время полета
+moneyFly:
+  # Работает, если установлен Vault
+  enable: true
+  period: 5
+  cost: 5.0
+
+# Сколько времени моэет летать игрок
+tempFly:
+  enable: false
+  default_time: 100 #0 если безгранично
+  perm_options: #in seconds
+    - 300
+    - 600
+    - 900
+
+# Полет доступен лишь с ограниченным радиусом вокруг стартовой позиции
+radiusFly:
+  enable: true
+  # Тип проверки локации. cube, sphere
+  inside_check: 'cube'
+  # С какой частотой делать проверки (в тиках)
+  period: 20
+  default_radius: 50 #0 если безгранично
+  perm_options:
+    - 10
+    - 50
+    - 200 #400x400
+# Телепортировать игрока на начальную точку когда
+# false - выключать флай #todo
+fly_disabling_teleport_to_start: true
+# Виды счетсиков времени в режиме полета
+# Работает, если tempFly.enable включен.
+timers:
+  chat: true
+  actionBar: true
+  bossBar: true
+    
+# Ограничения. Что не может делать игрок в режиме полета
+restrictions:
+  pvp: true #disable damage
+  pve: false
+  projectile: true
+  interact: true
+enable_world_permission: true

@@ -1,0 +1,26 @@
+prefix: '&bSuperFly &7> &r'
+config_reloaded: '&6SuperFly перезагружен'
+no_perm: '&cНет прав'
+incorect_usage: 'Неправильное использование'
+
+no_enought_exp: '&cНе хватает &aопыта'
+no_enought_money: '&cНе хватает &2денег'
+
+money_over: '&сЗакончились деньги'
+exp_over: '&cОпыт закончился'
+distance_over: '&cВы слишком далеко улетели'
+time_over: '&cВремя вышло'
+
+flyMode_enabled: '&6Режим полета &aвключен'
+flyMode_disabled: '&6Режим полета &cвыключен'
+flyMode_other_enabled: '&6Режим полета для игрока &b{player} &aвключен'
+flyMode_other_disabled: '&6Режим полета для игрока &b{player} &cвыключен'
+
+cannot_teleport: '&cВы не можете телепортироваться в режиме полета'
+
+restriction:
+  pvp: '&cВы не можете бить игрока в полёте'
+  pve: '&cВы не можете бить мобов в полёте'
+  pve-boss: '&cВы не можете сражатся с босов в полёте!'
+
+seconds_left: 'Осталось {seconds} секунд'

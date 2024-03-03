@@ -1,0 +1,65 @@
+name: SuperFly
+main: me.ansandr.superfly.SuperFly
+version: 1.0.0
+author: Ansandr
+api-version: 1.13
+
+commands:
+  fly:
+    permission: superfly.fly
+  superfly:
+  setflyloc:
+    permission: superfly.fly
+permissions:
+  #Command permissions
+  superfly.fly:
+    description: Allow to use command /fly
+    default: op
+  superfly.fly.others:
+    description: set fly mode to others
+    default: op
+ 
+  #General permissions
+  superfly.teleport:
+    description: allow you to teleport in fly mode
+    default: op
+  superfly.stay:
+    description: Teleport to start when fly is disabled
+    default: op
+  superfly.damage:
+    description: allow to damage someone entity in fly mode
+    default: op
+  superfly.worlds.*:
+    description: allow fly in all worlds
+    default: op
+  superfly.exp.bypass:
+    description: bypass exp restrication
+    default: op
+  superfly.money.bypass:
+    description: bypass money restrication
+    default: op
+  superfly.bypass.pvp:
+    description: Allow bypass pvp restriaction
+    default: false
+  superfly.bypass.pve:
+    description: Allow bypass pve restriaction
+    default: false
+  superfly.bypass.pve.boss:
+    description: Allow bypass boss pve restriaction
+    default: false
+  superfly.time.unlimited:
+    description: bypass time restrication
+    default: false
+  superfly.radius.unlimited:
+    description: Allow bypass the max distance
+    default: false
+  # Dynamic permissions: is configured in the config.
+  # superfly.radius.<blocks>:
+  #   description: The max radius where the player can reach
+  #   default: false
+  # superfly.time.<seconds>:
+  #   description: allow player to fly certain amount of time
+  #   default: false
+  # superfly.world.<worldname>:
+  #   description: allow player to fly in specific world
+  #   default: false
